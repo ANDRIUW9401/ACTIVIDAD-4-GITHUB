@@ -1,6 +1,6 @@
 **Historia 1 **
 
-Como  Administrador del sistema quiero añadir Clientes en una lista con la informacion solicitada por el sistema.
+Como  Administrador del sistema quiero añadir y eliminar Clientes en una lista con la informacion solicitada por el sistema.
 
 **Historia 2 **
 
