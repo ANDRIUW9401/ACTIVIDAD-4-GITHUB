@@ -1,21 +1,18 @@
-
 package ANIMALES;
-
 
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Cliente {
-    
+
     private String nombre;
-    private String Direccion;
+    private String direccion;
     private List<Animal> mascotas;
 
-    public Cliente(String nombre, String Direccion) {
+    public Cliente(String nombre, String direccion) {
         this.nombre = nombre;
-        this.Direccion = Direccion;
-        this.mascotas  = new ArrayList <>();
+        this.direccion = direccion;
+        this.mascotas = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -27,11 +24,11 @@ public class Cliente {
     }
 
     public String getDireccion() {
-        return Direccion;
+        return direccion;
     }
 
-    public void setDireccion(String Direccion) {
-        this.Direccion = Direccion;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     public List<Animal> getMascotas() {
@@ -41,19 +38,13 @@ public class Cliente {
     public void setMascotas(List<Animal> mascotas) {
         this.mascotas = mascotas;
     }
-    
-    
-    public void agregarMascota (Animal mascota) {
+
+    public void agregarMascota(Animal mascota) {
         mascotas.add(mascota);
     }
-    
+
     @Override
-    public String toString (){
-        
-        return "Cliente " + nombre + " , Dirreccion " + Direccion + "  Mascotas " + mascotas.size();
-    } 
-    
-    
-    
-    
+    public String toString() {
+        return "Cliente: " + nombre + ", Dirección: " + direccion + ", Mascotas: " + mascotas.size();
+    }
 }

@@ -1,6 +1,4 @@
-
 package ANIMALES;
-
 
 public class Animal {
     
@@ -37,13 +35,9 @@ public class Animal {
     public void setEdad(int edad) {
         this.edad = edad;
     }
-    
-    
-    @Override
-    public String toString (){
-        
-        return "Nombre " + nombre + " , especie " + especie + "Edad " + edad;
-    } 
 
-   
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + ", Especie: " + especie + ", Edad: " + edad;
+    }
 }
